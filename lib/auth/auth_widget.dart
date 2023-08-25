@@ -53,7 +53,7 @@ class _MyWidgetState extends State<AuthWidget> {
                   password: _passwordController.text,
                 );
                 if (message!.contains('Success')) {
-                  Navigator.of(context).pushNamed('home');
+                  Navigator.of(context).pushNamed('/home');
                 }
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
@@ -61,7 +61,7 @@ class _MyWidgetState extends State<AuthWidget> {
                   ),
                 );
               },
-              child: const Text('Create account'),
+              child: const Text('Login'),
             ),
             const SizedBox(height: 30),
             TextButton(

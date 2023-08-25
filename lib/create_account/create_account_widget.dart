@@ -53,7 +53,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                   password: _passwordController.text,
                 );
                 if (message!.contains('Success')) {
-                  Navigator.of(context).pushNamed('home');
+                  Navigator.of(context).pushNamed('/home');
                 }
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
